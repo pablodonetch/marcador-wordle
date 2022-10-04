@@ -7,18 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .menu {
-          width: 25%;
+          width: 30%;
           float: left;
-          padding: 15px;
-          border: 1px solid red;
+          padding-bottom: 50px;
         }
       
         .main {
-          width: 75%;
+          width: 70%;
           float: left;
-          padding: 15px;
-          border: 1px solid red;
+          padding-bottom: 50px;
         }
+        @media (max-width: 767px) {
+        .menu {
+          width: 100%;
+        }
+      
+        .main {
+          width: 100%;
+        }
+    }
     </style>
     {% block title %}<title>Marcador Wordle</title> {% endblock title %}
     {% block extra_head %} {% endblock extra_head %}
