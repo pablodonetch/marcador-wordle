@@ -4,7 +4,7 @@ import environ
 import django_heroku
 import os
 import dj_database_url
-#from decouple import config
+from decouple import config
 
 env = environ.Env()
 environ.Env.read_env()
